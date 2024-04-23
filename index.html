@@ -3,11 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Love Quotes</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+body {
+    background: linear-gradient(45deg, 
+                    rgba(255,0,0,0.5) 0%, 
+                    rgba(255,255,0,0.5) 10%, 
+                    rgba(0,255,0,0.5) 20%, 
+                    rgba(0,255,255,0.5) 30%, 
+                    rgba(0,0,255,0.5) 40%, 
+                    rgba(255,0,255,0.5) 50%, 
+                    rgba(255,0,0,0.5) 60%, 
+                    rgba(255,255,0,0.5) 70%, 
+                    rgba(0,255,0,0.5) 80%, 
+                    rgba(0,255,255,0.5) 90%, 
+                    rgba(0,0,255,0.5) 100%);
+    background-size: 800%; /* Increase the background size for smoother animation */
+    animation: changeBackground 10s infinite; /* Use animation to move the gradient */
+}
+
+@keyframes changeBackground {
+    0% {
+        background-position: 0% 0%; /* Start the gradient from the top-left corner */
+    }
+    100% {
+        background-position: 100% 100%; /* End the gradient on the bottom-right corner */
+    }
+}
+
+        header {
+            background-color: #f44336;
+            color: white;
+            padding: 20px;  
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .quote {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 6px solid #f44336;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Git Demograph page</h1>
-    <script src="app.js"></script>
+    <header>
+        <h1>Love Quotes</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <h2>Welcome to Love Quotes</h2>
+        <p>Explore and discover beautiful quotes about love to inspire your heart.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are dedicated to bringing you the most heartwarming and inspiring quotes about love from around the world.</p>
+    </section>
+
+    <section id="quotes" class="section">
+        <h2>Popular Quotes</h2>
+        <div class="quote">
+            <p>"The best thing to hold onto in life is each other."</p>
+            <p class="author">- Audrey Hepburn</p>
+        </div>
+        <div class="quote">
+            <p>"You know you're in love when you can't fall asleep because reality is finally better than your dreams."</p>
+            <p class="author">- Dr. Seuss</p>
+        </div>
+        <!-- Add more quotes here -->
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions, feel free to contact us:</p>
+        <p>Email: lovequotes@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Love Quotes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
